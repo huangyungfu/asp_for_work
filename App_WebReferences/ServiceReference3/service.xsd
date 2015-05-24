@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" />
+  <xs:element name="Update_animal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nickname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="animal_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="age" type="xs:int" />
+        <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zookeeper_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update_animalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Update_animalResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Remove_animal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Remove_animalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Remove_animalResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Remove_Zookeeper">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Remove_ZookeeperResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Remove_ZookeeperResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZooKeeper_List">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZooKeeper_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="ZooKeeper_ListResult" nillable="true" type="q1:ArrayOfZooKeeper" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZooKeeper_individual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZooKeeper_individualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="ZooKeeper_individualResult" nillable="true" type="q2:ArrayOfZooKeeper" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_animal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="animal_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nickname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="age" type="xs:int" />
+        <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zookeeper_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_animalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Insert_animalResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
